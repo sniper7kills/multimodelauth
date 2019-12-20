@@ -1,6 +1,6 @@
 <?php
 
-namespace sniper7kills\MultiModelAuth;
+namespace Sniper7Kills\MultiModelAuth;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\ServiceProvider;

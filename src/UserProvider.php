@@ -1,5 +1,5 @@
 <?php
-namespace sniper7kills\MultiModelAuth;
+namespace Sniper7Kills\MultiModelAuth;
 
 use Illuminate\Auth\EloquentUserProvider;
 use Illuminate\Contracts\Hashing\Hasher as HasherContract;
