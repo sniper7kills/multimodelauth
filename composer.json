@@ -6,7 +6,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "sniper7kills\\MultiModelAuth\\MultiModelAuthServiceProvider"
+                "Sniper7Kills\\MultiModelAuth\\MultiModelAuthServiceProvider"
             ]
         }
     },
