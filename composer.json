@@ -12,7 +12,7 @@
     },
     "autoload": {
         "psr-4": {
-            "sniper7kills\\MultiModelAuth\\": "src/"
+            "Sniper7Kills\\MultiModelAuth\\": "src/"
         }
     }
 }
