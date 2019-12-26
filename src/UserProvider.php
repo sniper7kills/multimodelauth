@@ -73,4 +73,27 @@ class UserProvider extends EloquentUserProvider
         }
         return null;
     }
+
+    /**
+     * Get a user based on credentials passed in by passport
+     *
+     * @param mixed $credential
+     * @return mixed
+     */
+    public function findForPassport($credential)
+    {
+        foreach($this->models as $model)
+        {
+            $this->model = $model;
+
+            if(method_exists($this->model, 'findForPassport'))
+                $user = (new $this->model)->findForPassport($credential);
+            else
+                $user = (new $this->model)->where('email',$credential)->first();
+
+            if($user != null)
+                return $user;
+        }
+        return null;
+    }
 }
